@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 12vh;
+  max-height: 80px;
+  background-color: rgb(11 13 23);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+}
+
+.burguer img {
+  height: 2em;
+}
+
+.logo img {
+  height: 2em;
+}
+
+nav {
+  display: none;
+}
+
+.home {
+  background-image: url(/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 120px 0px;
+  display: flex;
+  align-items: center;
+
+}
+
+.home-txt {
+  padding: 50px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  font-size: 50px;
+}
+
+.projects {
+  margin: auto;
+  padding: 80px 20px 100px;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1100px;
+
+}
+
+.projects-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.img-container {
+  height: 44vh;
+  margin: 3px;
+  background-size: 100% 64vh;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  max-height: 300px;
+}
+
+.txt-container {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 100%;
+  padding: 30px;
+}
+
+.white-txt {
+  color: white;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.gray-txt {
+  font-weight: bolder;
+  font-size: 12px;
+  color: rgb(172, 172, 172);
+}
+
+.one {
+  background-image: url(/goldenapple.jpg);
+}
+
+.two {
+  background-image: url(/rostov.jpg);
+}
+
+.three {
+  background-image: url(/maliy.jpg);
+}
+
+.four {
+  background-image: url(/andybookstore.jpg);
+}
+
+.team {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-container {
+  margin: 2px;
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 4px;
+  flex-grow: 1;
+  max-height: 500px;
+}
+
+.five {
+  background-image: url(/mholmes.jpg);
+}
+
+.six {
+  background-image: url(/lbaker.jpg);
+}
+
+.seven {
+  background-image: url(/mcox.jpg);
+}
+
+.eight {
+  background-image: url(/abenson.jpg);
+}
+
+.nine {
+  background-image: url(/jshore.jpg);
+}
+
+.contacts {
+  padding: 90px 15px 90px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-title {
+  font-size: 45px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 50px;
+}
+
+.contact-data p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+}
+
+.map-container {
+  margin-top: 30px;
+  height: 35vh;
+  background-image: url(/map.jpeg);
+  background-size: 100% 40vh;
+}
+
+footer {
+  background-color: rgb(11 13 23);
+  color: rgb(104, 104, 104);
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 648px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .map-container {
+    margin-top: 30px;
+    height: 35vh;
+    width: 45%;
+    background-image: url(/map.jpeg);
+    background-size: 100% 40vh;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: "one two two"
+      "three three four";
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+}
+
+@media (min-width: 770px) {
+  .burguer {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    color: white;
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+  }
+
+  nav p {
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bolder;
+  }
+
+  .contact-button {
+    background-color: rgb(255, 26, 102);
+
+  }
+
+  .home-txt {
+    font-size: 65px;
+    width: 50%;
+  }
+
+}
